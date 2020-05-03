@@ -1,14 +1,26 @@
-A one-liner phrase describing this project or app
+# Good Health and Well-being
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c87d1094207d46758618a055c5793f9d)](https://app.codacy.com/gh/BuildForSDG/Team-179-Backend?utm_source=github.com&utm_medium=referral&utm_content=BuildForSDG/Team-179-Backend&utm_campaign=Badge_Grade_Settings)
-[![Codacy Badge](https://img.shields.io/badge/Code%20Quality-D-red)](https://img.shields.io/badge/Code%20Quality-D-red)
 
+<!-- TODO: setting up codacy test coverage -->
 
 ## About
 
-What is this project about. Ok to enrich here or the section above it with an image. 
+Aims to ensure health and well-being for all, by focusing on mental health.Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, act and helps determine how we handle stress, relate to others, and make choices.
 
-Once this repo has been setup on Codacy by the TTL, replace the above badge with the actual one from the Codacy dashboard, and add the code coverage badge as well. This is mandatory
+## Why
+
+The stigma and scrutiny that comes with being associated with mental illness is one of the rising cause of this illness. People who may have noticed a difference in behavioural attitude desist from evaluating further just because of this stigma.This project aims at creating a forum that addresses that by:
+
+- Addressing social and geographical isolation experienced by forum members
+- Creating social connection for forum members
+- Provide information and practical advice for forum members
+
+## Usage
+
+How would someone use what you have built, include URLs to the deployed app, service e.t.c when you have it setup
+
+## Setup
 
 This is a simple python starter repo template for setting up your project. The setup contains:
 
@@ -18,27 +30,18 @@ This is a simple python starter repo template for setting up your project. The s
 
 - flake8: for linting and formatting
 
-## Why
-
-Talk about what problem this solves, what SDG(s) and SGD targets it addresses and why these are important
-
-## Usage
-How would someone use what you have built, include URLs to the deployed app, service e.t.c when you have it setup
-
-
-## Setup
-You should have **Python 3.5+** and **git** installed. 
+You should have **Python 3.5+** and **git** installed.
 
 1. Clone the repo you've created from the template herein and change into the directory
 
     ``
-    git clone <Your Repository>
+    git clone Team-179-Backend
     ``
 
 2. Change into repo directory
 
     ``
-    cd python-starter
+    cd Team-179-Backend
     ``
 
 3. Install poetry, a dependecy manager for python.
@@ -55,32 +58,25 @@ You should have **Python 3.5+** and **git** installed.
 
     On linux and other posix systems (mac included):
 
-    ``
-    curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
-    ``
+    ``curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python``
 
     &nbsp;
 
     To check that it is correctly installed, you can check the version:
-    ``
-    poetry --version
-    ``
+    ``poetry --version``
 
     May be the latest stable version is not installed with the installation script, to update poetry, you can run:
 
-    ``
-    poetry self update
-    ``
+    ``poetry self update``
 
 4. With poetry installed, you should install project dependecies by running:
 
-    ``
-    poetry install
-    ``
+    ``poetry install``
 
     This will install pytest for running tests and flake8, linter for your project.
 
-#### To Note
+### To Note
+
 `src/app.py` is the entry to the project and source code should go into the `src` folder.
 
 All tests should be written in the `tests` folder. tests/test_src.py is a sample test file that shows how tests should like. Feel free to delete it.
@@ -89,32 +85,34 @@ All tests should be written in the `tests` folder. tests/test_src.py is a sample
 
 - Lint: `poetry run flake8`
 - Run tests using the command: `poetry run pytest`
-- Install dependencies: 
+- Install dependencies:
   `poetry add <dependency>`
 - Install dev dependencies:
   `poetry add --dev <dev-dependency>`
 - Run your project:
   `poetry run app`
 
-
 ## Authors
 
-List the team behind this project. Their names linked to their Github, LinkedIn, or Twitter accounts should siffice. Ok to signify the role they play in the project, including the TTL and mentor
+- [Urban Ishimwe](https://github.com/urbanishimwe)
+- [Charles Muchogo](https://github.com/muchogoc)
+- [Jerry Shikanga](https://github.com/jerryshikanga)
+- [Kenneth Irungu](https://github.com/ken1800)
+- [Raymond Oluoch](https://github.com/rOluochKe)
 
 ## Contributing
+
 If this project sounds interesting to you and you'd like to contribute, thank you!
 First, you can send a mail to buildforsdg@andela.com to indicate your interest, why you'd like to support and what forms of support you can bring to the table, but here are areas we think we'd need the most help in this project :
-1.  area one (e.g this app is about human trafficking and you need feedback on your roadmap and feature list from the private sector / NGOs)
-2.  area two (e.g you want people to opt-in and try using your staging app at staging.project-name.com and report any bugs via a form)
-3.  area three (e.g here is the zoom link to our end-of sprint webinar, join and provide feedback as a stakeholder if you can)
+
+1. Feedback on our roadmap and feature list. This app is about promoting mental health
+2. Opt-in and try using your staging app at staging.project-name.com and report any bugs
+3. area three (e.g here is the zoom link to our end-of sprint webinar, join and provide feedback as a stakeholder if you can)
 
 ## Acknowledgements
 
-Did you use someone else’s code?
-Do you want to thank someone explicitly?
-Did someone’s blog post spark off a wonderful idea or give you a solution to nagging problem?
-
-It's powerful to always give credit.
+[Smith-Merry J, Goggin G, Campbell A, McKenzie K, Ridout B, Baylosis C. Social connection and online engagement: insights from interviews with users of a mental health online forum. JMIR Ment Health. 2019 Mar 26;6(3):e11084. doi: 10.2196/11084.](https://mental.jmir.org/2019/3/e11084/)
 
 ## LICENSE
+
 MIT
