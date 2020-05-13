@@ -1,6 +1,14 @@
 import os
+import sys
 
-from dotenv import load_dotenv
+import environ
+
+env = environ.Env(
+    # set casting, default value
+    DEBUG=(bool, False)
+)
+# reading .env file
+environ.Env.read_env()
 
 # team-179-backend directory
 PROJECT_DIR = os.path.dirname(
@@ -10,16 +18,11 @@ PROJECT_DIR = os.path.dirname(
 # src directory
 BASE_DIR = os.path.join(PROJECT_DIR, "src")
 
-# .env file with environment variables
-ENV_PATH = os.path.join(PROJECT_DIR, ".env")
-load_dotenv(dotenv_path=ENV_PATH)
+SECRET_KEY = env('SECRET_KEY')
 
-SECRET_KEY = os.getenv("SECRET_KEY")
-
-DEBUG = os.getenv("DEBUG")
+DEBUG = env.bool('DEBUG')
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -30,6 +33,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
+    "src.apps.profiles.apps.ProfilesConfig",
+
+    'phonenumber_field',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [

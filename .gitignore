@@ -7,5 +7,6 @@
 # DIRECTORIES
 **/**/__pycache__
 .vscode/
+.idea/
 .pytest_cache
 src.egg-info
